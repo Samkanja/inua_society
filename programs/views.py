@@ -1,7 +1,16 @@
 from django.shortcuts import render
 
-# Create your views here.
-from django.views.generic import TemplateView
+from .models import Program,AboutUs
+from django.views.generic.list import ListView
 
-class HomePageView(TemplateView):
-    template_name = 'home.html'
+
+
+class HomePageView(ListView):
+    model = Program
+    template_name = 'homepage.html'
+    context_object_name = 'programs'
+
+class AboutUsViewPage(ListView):
+    model = AboutUs
+    template_name = 'about.html'
+    context_object_name = 'aboutus'
