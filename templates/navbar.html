@@ -1,0 +1,36 @@
+{% load static %}
+<header>
+    <img class="logo" src="{% static 'images/inua_logo.png' %}">
+    <h2 class="logo-head">
+        INUA 
+    </br>
+        COLLECTIVE 
+    </br>
+        SOCIETY
+    </h2>
+    <div class=" bx bx-menu" id="menu-icon"></div>
+    <ul class="navbar">
+        <li><a href="{% url 'inua:homepage' %}">Home</a></li>
+        <li><a href="#">Programs</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Youth Empowerment, Mentorship and Welness</a></li>
+                    <li><a href="#">Community Advocacy, Empowerment and Development</a></li>
+                    <li><a href="#">Arts, Sports and Culture Development</a></li>
+                </ul>   
+            </div>
+        </li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Board Members</a></li>
+        <li><a href="#">Gallery</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Youth Empowerment, Mentorship and Welnes Gallery</a></li>
+                    <li><a href="#">Community Advocacy, Empowerment and Development Gallery</a></li>
+                    <li><a href="#">Arts, Sports and Culture Development Gallery</a></li>
+                </ul>      
+            </div>
+        </li>
+        <li><a href="{% url 'inua:aboutus' %}">About Us</a></li>
+    </ul>
+</header>
