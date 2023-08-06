@@ -8,15 +8,47 @@
         <h1>About Us</h1>
         <p>INUA COLLECTIVE  SOCIETY</p>
     </div>  
-     
-    <div class="about-us-main-body">
-        <img src="{% static 'images/about_us.jpg' %}">
-       
-        <div class="about-us-main-content">
-            <h2>INUA COLLECTIVE SOCIETY</h2>
-            <p>{{ about.description }}</p>
-        </div>   
+    <div class="about-heading-new">
+        <section class="about-new">
+            <div class="about-new-image">
+                <img src="{% static 'images/about_us.jpg' %}">
+            </div>
+            <div class="about-content-new">
+                <h2>INUA COLLECTIVE SOCIETY</h2>
+                <p>{{ about.description }}</p>
+                <a class="about-new-more" href="{% url 'inua:aboutus' %}">Learn More</a>
+            </div>
+        </section>
     </div>
+
+<!-- 
+    <div class="mission-heading-new">
+        <section class="mission-content-section">
+            <div class="mission-image">
+                <img src="{% static 'images/icons8-goal-50.png' %}">
+            </div>
+            
+            <div class="mission-content">
+                <h2>MISSION</h2>
+                <p>{{ about.mission }}</p>
+            </div>
+            
+        </section>
+    </div>
+
+    <div class="vision-heading-new">
+        <section class="vision-content-section">
+            <div class="vision-image">
+                <img src="{% static 'images/icons8-vision-64.png' %}">
+            </div>  
+            <div class="vision-content">
+                <h2>VISION</h2>
+                <p>{{ about.vision }}</p>
+            </div>      
+        </section>
+    </div> -->
+
+
     <div class="container">
         <div class="mission">
             <img src="{% static 'images/icons8-goal-50.png' %}">

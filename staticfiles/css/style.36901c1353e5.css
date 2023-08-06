@@ -21,7 +21,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 35px 15%;
-    background-color:rgba(240, 142, 13, 0.719);
+    background-color: orange;
     margin-bottom: 10px;
 
 }
@@ -101,9 +101,55 @@ header {
 /* header ends here */
 
 /* about-us extra begin here */
+section {
+    margin-top: 180px;
+    background-color:#dee0e3;
 
+}
+.about-us-body {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+} 
+.about-us-body img {
+    flex: 0 50%;
+    max-width: 50%;
+    height: auto;
+}
+.about-content {
+    padding: 35px;
+}
+.about-content h2 {
+    color: #36455c;
+    font-size: 24px;
+    margin: 15px 0px;
+}
+.about-content p{
+    color:#666;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 15px 0px;
+}
+.aboutus-more-btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #0084ff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.aboutus-more-btn  a{
+    text-decoration: none;
+}
+.aboutus-more-btn:hover {
+    background-color: #006dd6;
+}
 
-
+/* about-us extra end here */
 
 /* homepage begins here */
 .programs-dv {
@@ -113,19 +159,11 @@ header {
     column-gap: 20px;
     row-gap: 40px;
     margin-left: 5px;
-    /* background-image: linear-gradient(rgba(250, 247, 247, 0.6),rgba(252, 252, 252, 0.6)),url(../images/motivating_factors-removebg-preview.png); */
+    /* background-image: linear-gradient(rgba(250, 247, 247, 0.6),rgba(252, 252, 252, 0.6)),url("../images/motivating_factors-removebg-preview.285ed507233d.png"); */
     background-repeat: no-repeat;
     background-size: cover;
 
 }
-@media (max-width: 750px) {
-    .programs-dv {
-        grid-template-columns: 1fr 1fr;
-    }
-
-}
-
-
 .program-img {
     width: 100%;
 }
@@ -145,7 +183,7 @@ header {
 
 /* about page begins here */
 
-/* .about-us-heading {
+.about-us-heading {
     text-align: center;
     margin-top: 5px;
 }
@@ -158,7 +196,7 @@ header {
     font-size: 20px;
     color: #666;
     margin-bottom: 50px;
-} */
+}
 .about-us-main-body {
     display: flex;
     align-items: center;
@@ -227,8 +265,8 @@ header {
 
 footer {
 
-    background-color: rgba(240, 142, 13, 0.719);
-    /* background:linear-gradient(45deg,rgb(248, 184, 65),rgb(252, 114, 114),rgb(253, 205, 116)); */
+    /* background-color: rgb(235, 196, 124); */
+    background:linear-gradient(45deg,rgb(248, 184, 65),rgb(252, 114, 114),rgb(253, 205, 116));
     /* margin-left: 5px; */
     margin-top: 200px;
 }
@@ -304,7 +342,7 @@ footer {
     border-radius: 50%;
     font-size: 20px;
     color: black;
-    /* background-color:rgba(240, 142, 13, 0.719); */
+    background-color:rgb(252, 114, 114);
     text-align: center;
     line-height: 35px;
     margin-right: 10px;
