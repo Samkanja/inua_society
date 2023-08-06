@@ -13,11 +13,11 @@
         <li><a href="{% url 'inua:homepage' %}">Home</a></li>
         <li><a href="#">Programs</a>
             <div class="sub-menu-1">
+                {% for program in programs %}
                 <ul>
-                    <li><a href="#">Youth Empowerment, Mentorship and Welness</a></li>
-                    <li><a href="#">Community Advocacy, Empowerment and Development</a></li>
-                    <li><a href="#">Arts, Sports and Culture Development</a></li>
+                    <li><a href="{% url 'inua:activity' public_id=program.public_id %}">{{ program.title }}</a></li>
                 </ul>   
+                {% endfor %}
             </div>
         </li>
         <li><a href="#">Events</a></li>

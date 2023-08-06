@@ -136,14 +136,16 @@ header {
 }
 .program h4{
     font-size: large;
-    color:black;
+    color: #36455c;
 }
 .program p{
     margin-top: 10px;
+    color:#666;
+
 }
 .program-c{
     margin-left: 5px;
-    color: black;
+    color:black;
 }
 
 /* homepage ends here */
