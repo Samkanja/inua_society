@@ -21,34 +21,54 @@
         </section>
     </div>
 
-<!-- 
-    <div class="mission-heading-new">
-        <section class="mission-content-section">
-            <div class="mission-image">
-                <img src="{% static 'images/icons8-goal-50.png' %}">
+    <div class="mission-vision-corevalues">
+        <div class="mission-heading-new">
+            <section class="mission-content-section">
+                <div class="mission-image">
+                    <img src="{% static 'images/icons8-goal-50.png' %}">
+                </div>
+                
+                <div class="mission-content">
+                    <h2>MISSION</h2>
+                    <p>{{ about.mission }}</p>
+                </div>
+                
+            </section>
+        </div>
+    
+        <div class="vision-heading-new">
+            <section class="vision-content-section">
+                <div class="vision-image">
+                    <img src="{% static 'images/icons8-vision-64.png' %}">
+                </div>  
+                <div class="vision-content">
+                    <h2>VISION</h2>
+                    <p>{{ about.vision }}</p>
+                </div>      
+            </section>
+        </div>
+        <div class="core-values-heading-new">
+            <section class="core-values-content-section">
+                <div class="core-values-image">
+                    <img src="{% static 'images/icons8-diamonds-64 (1).png' %}">
+                </div>
+            </section>
+            <div class="core-values-content">
+                <h2>CORE VALUES</h2>
+                <ul>
+                    <li>Innovation</li>
+                    <li>Integrity</li>
+                    <li>Dignity</li>
+                    <li>Partnership & Collaborations</li>
+                    <li>Inclusic</li>
+                    
+                </ul>
+
             </div>
-            
-            <div class="mission-content">
-                <h2>MISSION</h2>
-                <p>{{ about.mission }}</p>
-            </div>
-            
-        </section>
+        </div> 
     </div>
-
-    <div class="vision-heading-new">
-        <section class="vision-content-section">
-            <div class="vision-image">
-                <img src="{% static 'images/icons8-vision-64.png' %}">
-            </div>  
-            <div class="vision-content">
-                <h2>VISION</h2>
-                <p>{{ about.vision }}</p>
-            </div>      
-        </section>
-    </div> -->
-
-
+    
+<!-- 
     <div class="container">
         <div class="mission">
             <img src="{% static 'images/icons8-goal-50.png' %}">
@@ -84,7 +104,7 @@
                     
                 </ul>
             </div>
-        </div>
+        </div> -->
     </div>   
     {% endfor %}
 </section> 

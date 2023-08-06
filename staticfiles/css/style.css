@@ -21,7 +21,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 35px 15%;
-    background-color:rgba(240, 142, 13, 0.719);
+    background-color:darkorange;
     margin-bottom: 10px;
 
 }
@@ -123,6 +123,11 @@ header {
         grid-template-columns: 1fr 1fr;
     }
 
+}
+@media (max-width:600px) {
+    .programs-dv {
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -227,7 +232,7 @@ header {
 
 footer {
 
-    background-color: rgba(240, 142, 13, 0.719);
+    background-color:darkorange;
     /* background:linear-gradient(45deg,rgb(248, 184, 65),rgb(252, 114, 114),rgb(253, 205, 116)); */
     /* margin-left: 5px; */
     margin-top: 200px;
