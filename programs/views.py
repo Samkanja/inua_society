@@ -36,7 +36,7 @@ class ActivityDetailView(DetailView):
     def get_object(self,queryset=None):
         return Program.objects.get_object_by_public_id(public_id=self.kwargs['public_id'])
 
-    def get_context_date(self,**kwargs):
+    def get_context_data(self,**kwargs):
         context = super().get_context_data(**kwargs)
         program = self.object
         context['activities'] = program.activity_set.all()
